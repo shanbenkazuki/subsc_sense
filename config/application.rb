@@ -18,5 +18,11 @@ module SubscSense
     #
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
+    config.generators do |g|
+      g.assets false    # <= css,javascriptファイルを作成しない
+      g.helper false    # <= helperファイルを作成しない
+      g.test_framework false  # <= テストファイルを作成しない
+      g.skip_routes true  # <= routes.rbを変更しない
+    end
   end
 end
