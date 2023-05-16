@@ -3,5 +3,5 @@ Rails.application.routes.draw do
   resources :quizzes
 
   # Defines the root path route ("/")
-  root "quizzes#index"
+  root "rails/welcome#index"
 end
