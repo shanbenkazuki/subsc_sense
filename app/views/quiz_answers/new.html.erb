@@ -1,0 +1,12 @@
+<h1>New quiz answer</h1>
+
+  <% @quizzes.each do |quiz| %>
+    <p>
+      <%= link_to quiz.title, quiz_answers_path(quiz_id: quiz.id), data: { turbo_method: :post } %>
+    </p>
+  <% end %>
+<br>
+
+<div>
+  <%= link_to "Back to quiz answers", quiz_answers_path %>
+</div>

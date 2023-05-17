@@ -1,0 +1,9 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render "form", quiz_answer: @quiz_answer %>
+
+<div>
+  <%= link_to "Back to quiz answers", quiz_answers_path %>
+
+  <%= button_to "Destroy this quiz answer", @quiz_answer, method: :delete %>
+</div>
